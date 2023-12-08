@@ -1,0 +1,124 @@
+{ 
+    "Products": 
+    [
+        { 
+            "productName": "K-Supreme&reg; SMART Single Serve Coffee Maker",
+            "productImage": "productOne.webp",
+            "productPriceZero": "$49.99",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "with",
+
+            "productPriceOne": "$129.99",
+            "productMiddleTagOne": "Site Deal:",
+            "productEndTagZero": "Keurig® Starter Kit",
+            "productEndTagOne": "$50.00 Off",
+            "productReviews": "4.3 | (320)"
+
+        },
+
+        { 
+            "productName": "Keurig&reg; K-Elite&reg; Coffee Maker",
+            "productImage": "productTwo.webp",
+            "productPriceZero": "FREE",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "with",
+            "productEndTagZero": "Keurig® Starter Kit",
+
+            "productPriceOne": "$69.99",
+            "productMiddleTagOne": "Site Deal:",
+            "productEndTagOne": "$80.00 Off",
+            "productReviews": "4.1 | (2507)" 
+        },
+        { 
+            "productName": "K-Mini&reg; Single Serve Coffee Maker",
+            "productImage": "productThree.webp",
+            "productPriceZero": "$69.99",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "Site Deal:",
+            "productEndTagZero": "$20.00 Off",
+
+            "productPriceOne": " ",
+            "productMiddleTagOne": " ",
+            "productEndTagOne": " ",
+            "productReviews": "3.9 | (1480)" 
+        },
+        { 
+            "productName": "K-Cafe&reg; SMART Single Serve Coffee Maker",
+            "productImage": "productFour.webp",
+            "productPriceZero": "$124.99",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "with",
+            "productEndTagZero": "Keurig® Starter Kit",
+
+            "productPriceOne": "$199.99",
+            "productMiddleTagOne": "Site Deal:",
+            "productEndTagOne": "$50.00 Off",
+            "productReviews": "4.5 | (479)"  
+        },
+        { 
+            "productName": "K-Slim&reg; Single Single Serve Coffee Maker",
+            "productImage": "productFive.webp",
+            "productPriceZero": "FREE",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "with",
+            "productEndTagZero": "Keurig® Starter Kit",
+
+            "productPriceOne": "$69.99",
+            "productMiddleTagOne": "Site Deal:",
+            "productEndTagOne": "$60.00 Off",
+            "productReviews": "4.0 | (1770)" 
+        },
+        { 
+            "productName": "K-Duo Plus&reg; Single Serve & Carafe Coffee Maker",
+            "productImage": "productSix.webp",
+            "productPriceZero": "$114.99",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "with",
+            "productEndTagZero": "Keurig® Starter Kit",
+
+            "productPriceOne": "$183.99",
+            "productMiddleTagOne": "Site Deal:",
+            "productEndTagOne": "$46.00 Off",
+            "productReviews": "4.0 | (1444)" 
+        },
+        { 
+            "productName": "K-Duo&reg; Special Edition Single Serve & Carafe Coffee Maker",
+            "productImage": "productSeven.webp",
+            "productPriceZero": "$49.99",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "with",
+            "productEndTagZero": "Keurig® Starter Kit",
+
+            "productPriceOne": "$69.99",
+            "productMiddleTagOne": "Site Deal:",
+            "productEndTagOne": "$30.00 Off",
+            "productReviews": "4.5 | (374)"  
+        },
+        { 
+            "productName": "K-Iced&reg; Single Serve Coffee Maker",
+            "productImage": "productEight.webp",
+            "productPriceZero": "$49.99",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "with",
+            "productEndTagZero": "Keurig® Starter Kit",
+
+            "productPriceOne": "$69.99",
+            "productMiddleTagOne": "Site Deal:",
+            "productEndTagOne": "$30.00 Off",
+            "productReviews": "4.5 | (374)" 
+        },
+        { 
+            "productName": "Keurig&reg; K-Cafe&reg; Barista Bar Single Serve Coffee Maker",
+            "productImage": "productNine.webp",
+            "productPriceZero": "$99.99",
+            "productPriceOriginal": " ",
+            "productMiddleTagZero": "with",
+            "productEndTagZero": "Keurig® Starter Kit",
+
+            "productPriceOne": "$199.99",
+            "productMiddleTagOne": " ",
+            "productEndTagOne": " ",
+            "productReviews": "4.2 | (812)"  
+        }
+    ]
+}

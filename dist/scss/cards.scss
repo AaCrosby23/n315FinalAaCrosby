@@ -1,0 +1,177 @@
+.card:hover{
+    border: 2px solid rgb(47, 64, 83);
+    border-bottom: none;
+    z-index: 999;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    min-height: 493px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 28px;
+    padding: 20px 6px 0px;
+
+    
+
+    .cardImg {
+        margin: 60px 0;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    h1 {
+        color: rgb(51, 51, 51);
+        font-size: 0.8em;
+        margin-bottom: 12px;
+        margin-left: -8px;
+        padding: 0 10px;
+
+    }
+
+    h2 {
+        color: rgb(209, 21, 12) !important;
+        letter-spacing: 1px;
+        font-size: 20px;
+        line-height: 18px;
+        margin-left: 2px;
+
+
+        span{
+            color: rgb(104, 103, 107);
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.8px;
+
+        }
+
+        .originalPrice{
+            text-decoration: line-through;
+        }
+
+        .middleTag{
+            font-size: 11px;
+        }
+
+        
+    }
+
+    .reviews{
+        width: 260px;
+
+        .starRating{
+            background: url(../img/reviewRepeat.webp) 0% 0% / 15px repeat-x;
+            width: 28%;
+            display: block;
+            float: left;
+            margin-top: 1px;
+            height: 16px;
+            margin-right: 5px;
+        }
+
+        p{
+            font-size: 0.875rem;
+            color: rgb(51, 51, 51);
+            font-weight: 400;
+            letter-spacing: 0;
+            margin-left: 5px;
+            line-height: 20px;
+        }
+    }
+
+    .saleNotification{
+
+        h1{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: rgb(126, 27, 27);
+            order: 4;
+    
+            span{
+                background-color: rgb(198, 0, 0);
+                color: #FFFFFF;
+                font-size: 0.75rem;
+                padding: 2px 5px;
+                border-radius: 0px 10px;
+                margin-right: 1px;
+            }
+        }
+        
+    }
+    
+    .freeShipping{
+        display: flex;
+        align-items: center;
+        width: 263px;
+        height: 20px;
+        margin: 10px 0px;
+
+        
+        img{
+            width: 33px;
+            height: 18px;
+        }
+
+        h1{
+            color: rgb(51, 51, 51);
+            text-align: left;
+            margin: 1px 0 0 5px;
+        }
+    }
+
+    .buyNow, .removeItem {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 50px;
+        position: absolute;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        color: rgb(51, 51, 51);
+        margin-top: 564px;
+        margin-left: -8px;
+        padding: 20px;
+        border-width: 2px;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-right-color: rgb(47, 64, 83);
+        border-bottom-color: rgb(47, 64, 83);
+        border-left-color: rgb(47, 64, 83);
+        cursor: pointer;
+
+    }
+
+    .buyNow {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .removeItem {
+        // background-color: #6e0607;
+        background-color: rgb(255, 255, 255);
+        margin-top: 470px;
+
+    }
+}
+
+.card:hover > .buyNow {
+    display: flex;
+}
+
+.card:hover > .removeItem {
+    display: flex;
+}

@@ -1,0 +1,809 @@
+@font-face {
+  font-family: "MarkOT";
+  src: url("../fonts/MarkOT.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "MarkOT", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.contentWrap {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#app {
+  padding-bottom: 580px;
+}
+
+.navHolder {
+  width: 100%;
+  height: 290px;
+  z-index: 90;
+}
+.navHolder .middleNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 106px;
+  background-color: #ece9e4;
+  padding: 0 40px;
+}
+.navHolder .middleNav .homeLogo img {
+  width: 175px;
+  height: 30px;
+}
+.navHolder .middleNav .searchBar {
+  border: 1px solid #d2d2d2;
+  border-radius: 1.28125rem;
+  box-sizing: border-box;
+  height: 2.5rem;
+  width: 37.5rem;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  margin-left: -68px;
+}
+.navHolder .middleNav .searchBar img {
+  position: absolute;
+  margin-left: 18px;
+}
+.navHolder .middleNav .searchBar input {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  min-height: calc(1.5em + 0.75rem + 2px);
+  background-color: transparent;
+  border: none;
+}
+.navHolder .middleNav .searchBar label {
+  color: #495057;
+  position: absolute;
+  margin-left: 64px;
+}
+.navHolder .middleNav .navFunctions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  padding: 0 30px;
+  margin-right: -10px;
+}
+.navHolder .middleNav .navFunctions h2 {
+  width: 180px;
+  height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+  font-size: 0.875rem;
+  color: #000000;
+  line-height: 1;
+  margin-left: -122px;
+}
+.navHolder .middleNav .navFunctions .middleList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  position: relative;
+  color: #282828;
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  line-height: 13px;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 35px;
+}
+.navHolder .middleNav .navFunctions .middleList .cartButton {
+  position: relative;
+}
+.navHolder .middleNav .navFunctions .middleList .link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 0px 14px;
+}
+.navHolder .middleNav .navFunctions .middleList .link svg {
+  width: 32px;
+  height: 32px;
+}
+.navHolder nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(3.125rem + 10px);
+  padding-right: 160px;
+  padding-left: 40px;
+  background-color: #ece9e4;
+}
+.navHolder nav a {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: 800;
+  line-height: 1.1875rem;
+  letter-spacing: 0;
+}
+.navHolder nav a img {
+  width: 20px;
+  height: 28px;
+  margin-right: 8px;
+}
+.navHolder nav a:hover {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 100vw;
+  height: 3.125rem;
+  transition: ease-in-out 0.5s;
+}
+.navHolder .dealsContainer {
+  background-color: rgb(71, 48, 54);
+  padding: 16px 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navHolder .dealsContainer .textContainer1 {
+  border-right: 1px solid #f3f3f3;
+  width: 25%;
+  height: 40px;
+  padding: 5px 0px;
+  padding-left: 60px;
+}
+.navHolder .dealsContainer .textContainer1 h1 {
+  font-size: 12px;
+  font-weight: 0;
+  color: #f3f3f3;
+  margin-right: 109px;
+}
+.navHolder .dealsContainer .textContainer1 h1 span {
+  font-size: 8px;
+  font-weight: 1200;
+}
+.navHolder .dealsContainer .textContainer1 h1 a {
+  color: #f3f3f3;
+  font-size: 8px;
+}
+.navHolder .dealsContainer .textContainer2 {
+  border-right: 1px solid #f3f3f3;
+  width: 25%;
+  height: 40px;
+  padding: 10px 0px;
+  padding-left: 60px;
+}
+.navHolder .dealsContainer .textContainer2 .other {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.navHolder .dealsContainer .textContainer2 .other h1 {
+  font-size: 12px;
+  font-weight: 0;
+  color: #f3f3f3;
+  margin-right: 99px;
+}
+.navHolder .dealsContainer .textContainer3 {
+  border-right: 1px solid #f3f3f3;
+  width: 25%;
+  height: 40px;
+  padding: 3px 0px;
+  padding-left: 60px;
+}
+.navHolder .dealsContainer .textContainer3 h1 {
+  font-size: 12px;
+  font-weight: 0;
+  color: #f3f3f3;
+  margin-right: 109px;
+}
+.navHolder .dealsContainer .textContainer4 {
+  width: 25%;
+  height: 35px;
+  padding: 10px 0px;
+  padding-left: 60px;
+}
+.navHolder .dealsContainer .textContainer4 h1 {
+  font-size: 12px;
+  font-weight: 0;
+  color: #f3f3f3;
+  margin-right: 0px;
+}
+
+footer {
+  width: 1200px;
+  height: 580px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: calc(50% - 600px);
+}
+footer .footerBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding: 0 140px 0 40px;
+  color: #ffffff;
+  background-color: #3b2b2f;
+}
+footer .footerBanner .bannerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footerBanner .bannerLeft i {
+  font-size: 20px;
+}
+footer .footerBanner .bannerLeft h4 {
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+footer .footerBanner .bannerLeft span {
+  margin: 0 10px;
+}
+footer .footerBanner .bannerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footerBanner .bannerRight h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+footer .footerBanner .bannerRight i {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+footer .footerContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+  line-height: 1;
+}
+footer .footerContent .shopAndOrders {
+  width: 290px;
+}
+footer .footerContent .shopAndOrders .specialMargin {
+  margin-bottom: 50px;
+}
+footer .footerContent .helpfulInfo {
+  width: 290px;
+}
+footer .footerContent .aboutUs {
+  width: 290px;
+}
+footer .footerContent .mailingList {
+  width: 290px;
+}
+footer .footerContent h4 {
+  margin-top: -8px;
+  margin-bottom: 1.3em;
+  font-size: 1.25rem;
+  font-weight: 800;
+  white-space: nowrap;
+  color: #2D2A26;
+}
+footer .footerContent p {
+  color: #2D2A26;
+  font-size: 0.875rem;
+  font-weight: 100;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+footer .footerContent .mailingInputBlock {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+footer .footerContent input {
+  width: 70%;
+  height: 38px;
+  border: 2px solid #D8D8D8;
+  padding-left: 10px;
+  border-right: none;
+}
+footer .footerContent .signUpMailing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 38px;
+  margin: 0;
+  font-weight: 600;
+  border: 2px solid #F9C507;
+}
+footer .footerContent .footerCountry {
+  margin-top: 30px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #2D2A26;
+  border-top: 1px solid #ebebeb;
+  text-align: left;
+  font-weight: 100;
+}
+footer .footerContent .countrySelector {
+  display: flex;
+  align-items: center;
+}
+footer .footerContent .countrySelector .countryIcon {
+  margin-right: 30px;
+}
+footer .footerFinal {
+  margin-top: 30px;
+  border-top: 2px solid rgb(128, 128, 128);
+}
+footer .footerFinal p {
+  font-size: 12px;
+  font-style: italic;
+}
+footer .footerFinal p span {
+  margin: 0 5px;
+  cursor: default;
+}
+footer .footerFinal .clickable {
+  cursor: pointer;
+}
+footer .footerFinal .copy, footer .footerFinal .trademarks {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cartCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #333333;
+  position: absolute;
+  top: -12px;
+  right: -15px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.loginModal {
+  width: 350px;
+  min-height: 250px;
+  position: absolute;
+  z-index: 95;
+  top: 64px;
+  right: 0;
+  border-radius: 12px;
+  padding: 20px 30px;
+  background-color: #ffffff;
+}
+.loginModal .closeModal {
+  font-size: 16px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.loginModal .closeModal i {
+  margin-right: 5px;
+}
+.loginModal .modalToggles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 10px 0;
+}
+.loginModal .modalToggles .loginToggle, .loginModal .modalToggles .signUpToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 30px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.loginModal .modalToggles .activeToggle {
+  font-weight: 600;
+  background-color: #ece9e4;
+}
+.loginModal input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ece9e4;
+}
+.loginModal .submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: #3b2b2f;
+  border: 2px solid rgb(241, 190, 72);
+  border-radius: 20px;
+  font-family: MarkOT;
+  font-weight: 800;
+  cursor: pointer;
+}
+.loginModal .submitButton:hover {
+  border: 2px solid #3b2b2f;
+  transition: ease-in-out 0.4s;
+}
+
+.hide {
+  display: none;
+}
+
+.loggedInModal {
+  width: 350px;
+  height: 450px;
+  position: absolute;
+  z-index: 99;
+  bottom: -450px;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px 30px;
+}
+.loggedInModal .closeModal {
+  font-size: 16px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.loggedInModal .closeModal i {
+  margin-right: 5px;
+}
+.loggedInModal h1 {
+  margin-top: 30px;
+}
+.loggedInModal h2 {
+  font-size: 20px;
+}
+.loggedInModal .logoutButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #3b2b2f;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.homePage {
+  max-width: 1200px;
+  margin-top: -40px;
+}
+.homePage .dealBannerZero {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 18px;
+}
+.homePage .dealBannerZero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homePage .filterBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.homePage .filterBar .filters {
+  width: 66%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homePage .filterBar .filters .filBox:hover {
+  border: 2px solid rgb(51, 51, 51);
+}
+.homePage .filterBar .filters .filBox {
+  border: 2px solid rgb(153, 153, 153);
+  border-radius: 3px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0px 32px 10px 14px;
+}
+.homePage .filterBar .filters .filBox a {
+  text-decoration: none;
+  color: rgb(45, 42, 38);
+  margin-right: 10px;
+  margin-top: 13.5px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgb(45, 42, 38);
+  line-height: 20px;
+  cursor: pointer;
+}
+.homePage .filterBar .filters .filBox a::after {
+  content: "";
+  margin-top: -0.8px;
+  margin-left: 10px;
+  padding: 6px;
+  position: absolute;
+  border-style: solid;
+  border-color: rgb(153, 153, 153);
+  border-image: initial;
+  border-width: 0px 1.6px 1.6px 0px;
+  transform: rotate(45deg);
+}
+.homePage .filterBar .sortBy h2 {
+  font-size: 0.75rem;
+  line-height: 20px;
+  margin-bottom: 0px;
+  color: rgb(45, 42, 38);
+}
+.homePage .filterBar .sortBy h1::after {
+  content: "";
+  margin-top: -6px;
+  margin-left: 20px;
+  padding: 6px;
+  position: absolute;
+  border-style: solid;
+  border-color: rgb(45, 42, 38);
+  border-image: initial;
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+}
+.homePage .filterBar .sortBy h1 {
+  font-size: 0.875rem;
+  color: rgb(45, 42, 38);
+  white-space: nowrap;
+  padding-right: 40px;
+}
+.homePage .cardHolder {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.card:hover {
+  border: 2px solid rgb(47, 64, 83);
+  border-bottom: none;
+  z-index: 999;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  min-height: 493px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 28px;
+  padding: 20px 6px 0px;
+}
+.card .cardImg {
+  margin: 60px 0;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card .cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card h1 {
+  color: rgb(51, 51, 51);
+  font-size: 0.8em;
+  margin-bottom: 12px;
+  margin-left: -8px;
+  padding: 0 10px;
+}
+.card h2 {
+  color: rgb(209, 21, 12) !important;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 18px;
+  margin-left: 2px;
+}
+.card h2 span {
+  color: rgb(104, 103, 107);
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+}
+.card h2 .originalPrice {
+  text-decoration: line-through;
+}
+.card h2 .middleTag {
+  font-size: 11px;
+}
+.card .reviews {
+  width: 260px;
+}
+.card .reviews .starRating {
+  background: url(../img/reviewRepeat.webp) 0% 0%/15px repeat-x;
+  width: 28%;
+  display: block;
+  float: left;
+  margin-top: 1px;
+  height: 16px;
+  margin-right: 5px;
+}
+.card .reviews p {
+  font-size: 0.875rem;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 5px;
+  line-height: 20px;
+}
+.card .saleNotification h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: rgb(126, 27, 27);
+  order: 4;
+}
+.card .saleNotification h1 span {
+  background-color: rgb(198, 0, 0);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  padding: 2px 5px;
+  border-radius: 0px 10px;
+  margin-right: 1px;
+}
+.card .freeShipping {
+  display: flex;
+  align-items: center;
+  width: 263px;
+  height: 20px;
+  margin: 10px 0px;
+}
+.card .freeShipping img {
+  width: 33px;
+  height: 18px;
+}
+.card .freeShipping h1 {
+  color: rgb(51, 51, 51);
+  text-align: left;
+  margin: 1px 0 0 5px;
+}
+.card .buyNow, .card .removeItem {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 50px;
+  position: absolute;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: rgb(51, 51, 51);
+  margin-top: 564px;
+  margin-left: -8px;
+  padding: 20px;
+  border-width: 2px;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-color: rgb(47, 64, 83);
+  border-bottom-color: rgb(47, 64, 83);
+  border-left-color: rgb(47, 64, 83);
+  cursor: pointer;
+}
+.card .buyNow {
+  background-color: rgb(255, 255, 255);
+}
+.card .removeItem {
+  background-color: rgb(255, 255, 255);
+  margin-top: 470px;
+}
+
+.card:hover > .buyNow {
+  display: flex;
+}
+
+.card:hover > .removeItem {
+  display: flex;
+}
+
+.cartPage {
+  width: 1200px;
+  margin: 30px auto 0 auto;
+  margin-top: -50px;
+}
+.cartPage .dealBannerOne {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/cartBanner.avif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 18px;
+  color: #24523b;
+  padding: 20px 0;
+}
+.cartPage .dealBannerOne .topContent {
+  text-align: center;
+}
+.cartPage .dealBannerOne .topContent h2 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.cartPage .dealBannerOne .topContent p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.cartPage .dealBannerOne .middleContent {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cartPage .dealBannerOne .middleContent .contentBox {
+  text-align: center;
+}
+.cartPage .dealBannerOne .middleContent .contentBox h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.cartPage .dealBannerOne .middleContent .contentBox h4 {
+  font-weight: 500;
+}
+.cartPage .dealBannerOne .middleContent .divider {
+  width: 2px;
+  height: 100%;
+  border-right: 1px solid #24523b;
+}
+.cartPage .dealBannerOne .bottomContent {
+  font-style: italic;
+  font-size: 12px;
+}
+.cartPage .cartItems .itemCounter {
+  width: 100%;
+  margin: 20px 0 0 0;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-align: center;
+}
+.cartPage .cartItems .noItems {
+  font-size: 42px;
+  margin: 0 auto 200px auto;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 50px;
+}
+.cartPage .cartItems .cartHolder {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

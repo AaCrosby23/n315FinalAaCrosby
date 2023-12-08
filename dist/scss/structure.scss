@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "MarkOT";
+    src: url("../fonts/MarkOT.ttf");
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+ font-family: "MarkOT", Arial, Helvetica, sans-serif;
+ 
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px;
+}
+
+.contentWrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#app {
+    padding-bottom: 580px;
+}
